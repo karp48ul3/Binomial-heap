@@ -118,19 +118,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    hWnd = CreateWindowW(szWindowClass, szTitle, WS_VSCROLL | WS_OVERLAPPEDWINDOW,
       CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr);
 
-   /*RECT rect;
-   rect.left = 0;
-   rect.top = 0;
-   rect.right = 1280;
-   rect.bottom = 1280;
-   AdjustWindowRectEx(&rect, WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX, FALSE, 0);
-
-   wchar_t* wString = new wchar_t[4096];
-   MultiByteToWideChar(CP_ACP, 0, "Test window", -1, wString, 4096);
-
-   hWnd = CreateWindowEx(0, szWindowClass, wString, WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX | WS_OVERLAPPED, 0, 0, rect.right - rect.left, rect.bottom - rect.top, NULL, NULL, hInstance, NULL);*/
-
-
+ 
    if (!hWnd)
    {
       return FALSE;
