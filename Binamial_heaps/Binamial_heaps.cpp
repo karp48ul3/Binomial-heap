@@ -322,7 +322,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
                 break;
             case IDC_BUTTON_INSERT_NODE:
             {
-                //SetWindowPos(hwndButtonInsertNode, HWND_TOP, 100 - 100, 0, 100, 25, NULL);
+
                 TCHAR buff[1024];
                 GetWindowText(hwndEditInsertNode, buff, 1024);
                 //buffToStr;
